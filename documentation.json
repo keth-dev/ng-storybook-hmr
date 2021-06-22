@@ -1,24 +1,7 @@
 {
     "pipes": [],
     "interfaces": [],
-    "injectables": [
-        {
-            "name": "MyUiLibService",
-            "id": "injectable-MyUiLibService-b3c1b19d7da886d35ca73ac1927602df",
-            "file": "projects/my-ui-lib/src/lib/my-ui-lib.service.ts",
-            "properties": [],
-            "methods": [],
-            "description": "",
-            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class MyUiLibService {\n\n  constructor() { }\n}\n",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "args": [],
-                "line": 6
-            },
-            "type": "injectable"
-        }
-    ],
+    "injectables": [],
     "classes": [],
     "directives": [],
     "components": [
@@ -168,53 +151,6 @@
             "stylesData": ""
         },
         {
-            "name": "MyUiLibComponent",
-            "id": "component-MyUiLibComponent-015c441bca719b14099d6f4551c1243d",
-            "file": "projects/my-ui-lib/src/lib/my-ui-lib.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "lib-my-ui-lib",
-            "styleUrls": [],
-            "styles": [],
-            "template": "<p>\n  my-ui-lib works!\n</p>\n",
-            "templateUrl": [],
-            "viewProviders": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 17
-                }
-            ],
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "",
-            "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-my-ui-lib',\n  template: `\n    <p>\n      my-ui-lib works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class MyUiLibComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": "",
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "args": [],
-                "line": 13
-            },
-            "implements": [
-                "OnInit"
-            ]
-        },
-        {
             "name": "PageComponent",
             "id": "component-PageComponent-a314ad7c4ab723b6e6e81d4267216957",
             "file": "projects/my-ui-lib/src/lib/ui/page/page.component.ts",
@@ -282,43 +218,6 @@
     "modules": [
         {
             "name": "MyUiLibModule",
-            "children": [
-                {
-                    "type": "providers",
-                    "elements": []
-                },
-                {
-                    "type": "declarations",
-                    "elements": [
-                        {
-                            "name": "MyUiLibComponent"
-                        }
-                    ]
-                },
-                {
-                    "type": "imports",
-                    "elements": []
-                },
-                {
-                    "type": "exports",
-                    "elements": [
-                        {
-                            "name": "MyUiLibComponent"
-                        }
-                    ]
-                },
-                {
-                    "type": "bootstrap",
-                    "elements": []
-                },
-                {
-                    "type": "classes",
-                    "elements": []
-                }
-            ]
-        },
-        {
-            "name": "UiModule",
             "children": [
                 {
                     "type": "providers",
@@ -460,17 +359,17 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/my-ui-lib/src/lib/ui/button/Button.stories.ts",
-                "type": "Story<Button>",
-                "defaultValue": "(args: Button) => ({\n  component: Button,\n  props: args,\n})"
+                "file": "projects/my-ui-lib/src/lib/ui/page/Page.stories.ts",
+                "type": "Story<Page>",
+                "defaultValue": "(args: Page) => ({\n  component: Page,\n  props: args,\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/my-ui-lib/src/lib/ui/page/Page.stories.ts",
-                "type": "Story<Page>",
-                "defaultValue": "(args: Page) => ({\n  component: Page,\n  props: args,\n})"
+                "file": "projects/my-ui-lib/src/lib/ui/button/Button.stories.ts",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  component: Button,\n  props: args,\n})"
             }
         ],
         "functions": [],
@@ -595,27 +494,9 @@
     },
     "routes": [],
     "coverage": {
-        "count": 4,
+        "count": 5,
         "status": "low",
         "files": [
-            {
-                "filePath": "projects/my-ui-lib/src/lib/my-ui-lib.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "MyUiLibComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/3",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/my-ui-lib/src/lib/my-ui-lib.service.ts",
-                "type": "injectable",
-                "linktype": "injectable",
-                "name": "MyUiLibService",
-                "coveragePercent": 0,
-                "coverageCount": "0/2",
-                "status": "low"
-            },
             {
                 "filePath": "projects/my-ui-lib/src/lib/ui/button/Button.stories.ts",
                 "type": "variable",

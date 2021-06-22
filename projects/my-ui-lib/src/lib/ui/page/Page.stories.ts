@@ -7,7 +7,7 @@ import { Story, Meta } from '@storybook/angular/types-6-0';
 import Page from './page.component';
 
 import * as HeaderStories from '../header/Header.stories';
-import { UiModule } from '../ui.module';
+import { MyUiLibModule } from '../../my-ui-lib.module';
 
 export default {
   title: 'Example/Page',
@@ -15,7 +15,7 @@ export default {
   decorators: [
     moduleMetadata({
       declarations: [],
-      imports: [CommonModule, UiModule, RouterTestingModule],
+      imports: [CommonModule, MyUiLibModule, RouterTestingModule],
     }),
   ],
 } as Meta;

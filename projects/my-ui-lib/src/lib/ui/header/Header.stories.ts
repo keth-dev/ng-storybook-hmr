@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { Story, Meta } from '@storybook/angular/types-6-0';
 
 import Header from './header.component';
-import { UiModule } from '../ui.module';
+import { MyUiLibModule } from '../../my-ui-lib.module';
 
 export default {
   title: 'Example/Header',
@@ -12,7 +12,7 @@ export default {
   decorators: [
     moduleMetadata({
       declarations: [],
-      imports: [CommonModule, UiModule],
+      imports: [CommonModule, MyUiLibModule],
     }),
   ],
 } as Meta;
