@@ -33,7 +33,9 @@
     "@angular/router": "~11.0.6",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "@cssinsurance/mycss-ui-lib": "0.1.338",
+    "@xstate/fsm": "^1.0.0"
   },
   "devDependencies": {
     "@angular-builders/jest": "^11.0.0",
