@@ -8,7 +8,6 @@ import Page from './page.component';
 
 import * as HeaderStories from '../header/Header.stories';
 import { UiModule } from '../ui.module';
-import { IconComponent, UiLibModule } from '@cssinsurance/mycss-ui-lib';
 
 export default {
   title: 'Example/Page',
