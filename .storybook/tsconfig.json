@@ -1,0 +1,20 @@
+{
+  "extends": "../tsconfig.sb.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": [
+      "node"
+    ]
+  },
+  "exclude": [
+    "../src/test.ts",
+    "../src/**/*.spec.ts",
+    "../projects/**/*.spec.ts"
+  ],
+  "include": [
+    "../src/**/*"
+  ],
+  "files": [
+    "./typings.d.ts"
+  ]
+}

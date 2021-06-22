@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "docs:json": "compodoc -p ./tsconfig.sb.json -e json -d .",
+    "storybook": "npm run docs:json && start-storybook -p 8000 -s ./src/lib/assets:/assets",
+    "build-storybook": "npm run docs:json && build-storybook -o ./dist/package/storybook -s ./src/lib/assets:/assets"
   },
   "private": true,
   "dependencies": {
@@ -20,12 +23,26 @@
     "@angular/router": "~11.2.8",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.11.3"
+    "zone.js": "~0.11.3",
+    "@cssinsurance/mycss-ui-lib": "0.1.338",
+    "@xstate/fsm": "^1.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.13",
     "@angular/cli": "~11.2.7",
     "@angular/compiler-cli": "~11.2.8",
+    "@compodoc/compodoc": "1.1.11",
+    "@storybook/addon-a11y": "6.3.0-rc.4",
+    "@storybook/addon-actions": "6.3.0-rc.4",
+    "@storybook/addon-backgrounds": "6.3.0-rc.4",
+    "@storybook/addon-controls": "6.3.0-rc.4",
+    "@storybook/addon-docs": "6.3.0-rc.4",
+    "@storybook/addon-essentials": "6.3.0-rc.4",
+    "@storybook/addon-links": "6.3.0-rc.4",
+    "@storybook/addon-viewport": "6.3.0-rc.4",
+    "@storybook/addons": "6.3.0-rc.4",
+    "@storybook/angular": "6.3.0-rc.4",
+    "@storybook/cli": "6.3.0-rc.4",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
