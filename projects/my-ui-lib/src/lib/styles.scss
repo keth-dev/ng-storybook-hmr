@@ -1,1 +1,7 @@
-@import '~@cssinsurance/mycss-ui-lib/lib/styles/styles';
+@import '~@cssinsurance/mycss-ui-lib/lib/styles/global/reset';
+@import '~@cssinsurance/mycss-ui-lib/lib/styles/global/normalize';
+@import '~@cssinsurance/mycss-ui-lib/lib/styles/global/base';
+// @import '~@cssinsurance/mycss-ui-lib/lib/styles/global/fonts';
+@import '~@cssinsurance/mycss-ui-lib/lib/styles/global/layout-helpers';
+@import '~@cssinsurance/mycss-ui-lib/lib/styles/global/a11y';
+@import '~@cssinsurance/mycss-ui-lib/lib/styles/global/theme';
