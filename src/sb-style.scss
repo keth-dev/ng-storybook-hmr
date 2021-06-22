@@ -1,0 +1,72 @@
+@import '~@cssinsurance/mycss-ui-lib/lib/styles/styles';
+@import '~@cssinsurance/mycss-ui-lib/lib/styles/variables';
+
+// Helper classes for formatting stories
+
+.uil-sb_grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.bottom {
+    align-items: flex-end;
+  }
+
+  > * {
+    margin: 2em;
+  }
+}
+
+.uil-sb_stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uil-sb_info {
+  @include font-s;
+
+  position: relative;
+  max-width: 30em;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  padding-top: 0.75em;
+  padding-left: 3em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  background-color: var(--uil_color_blue-10);
+  border-radius: 4px;
+  color: var(--uil_color_blue);
+
+  &::before {
+    @include font-base;
+
+    content: '️🤓';
+    display: block;
+    position: absolute;
+    left: 0.75em;
+  }
+
+  code {
+    position: relative;
+    top: -0.0875em;
+    padding-left: 0.15em;
+    padding-right: 0.15em;
+    white-space: nowrap;
+    font-size: 0.875em;
+    font-weight: bold;
+    color: var(--uil_color_magenta-dark);
+  }
+}
+
+.uil-sb_figure {
+  text-align: center;
+
+  figcaption {
+    @include font-s;
+
+    margin-top: 1em;
+    color: var(--uil_color_blue-70);
+  }
+}

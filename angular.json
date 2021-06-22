@@ -4,7 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "intro-storybook-angular-template": {
-      "projectType": "application",
+      "projectType": "library",
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
@@ -24,7 +24,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/sb-style.scss"
             ],
             "scripts": []
           },
